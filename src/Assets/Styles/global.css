@@ -1,0 +1,107 @@
+/* Apply default box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Define color variables and font sizes in :root */
+:root {
+  /* Color variables */
+  --primary-color: #000;
+  --secondary-color: #555;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  
+  /* Additional colors */
+  --white: #fff;
+  --gray: #b6b6b6;
+
+  /* Font Sizes */
+  --primary-font-size: 1.125rem; /* Base font size (18px) */
+  --secondary-font-size: 1rem; /* Smaller font size (16px) */
+}
+
+/* Set body margin, background color, text color, and font size */
+body {
+  margin: 0;
+  background-color: var(--white); /* Set background color using a CSS variable */
+  color: var(--secondary-color); /* Use CSS variable for text color */
+  font-size: var(--secondary-font-size); /* Use CSS variable for body font size */
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+  color: var(--gray);
+}
+.navbar-brand{
+  color:  var(--primary-color);
+  font-size: 2rem;
+  font-weight: 800;
+}
+.navbar-brand:focus, 
+.navbar-brand:hover {
+  color: var(--secondary-color);
+}
+.nav-link{
+  color:  var(--primary-color);
+  --secondary-font-size: 1rem;
+  font-weight: 500;
+}
+.BF-Size{
+  font-size: 14px;
+}
+
+.breadcrumb a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.breadcrumb  a:hover {
+  color: var(--gray);
+  font-weight: 500;
+}
+.ProductPageTitle{
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 500;
+  color: var(--primary-color) ;
+  text-transform: uppercase;
+  margin:1.5rem 0 1rem 0;
+}
+.ProductDiplayListWrap{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.ProductDiplayListWrap .PDL-Items{
+    border: 0;
+    text-align: left;
+    background: var(--gray);
+}
+
+.ProductImg{
+  opacity: 0.5; /* Adjust the opacity of the product image */
+  height: 276px;
+}
+.CardBodyEnhanceColor{
+  background: var(--white);
+  padding: 10px 0;
+}
+.LayoutProductTitle{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height:1.5rem;
+}
+.LayoutProductPrice{
+  font-size: 0.9rem;
+}
+.NumberofProducts{
+  font-size: 1rem;
+  color: var(--gray);
+}
